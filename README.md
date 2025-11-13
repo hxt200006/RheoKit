@@ -23,7 +23,7 @@ Each RheoKit component can be run independently. For convenience, you can store 
 
 ### 1️⃣ Compile Shear
 
-If you haven’t built **Shear** yet, compile it with `gfortran`:
+**Shear** is a fortran program. Compile it with `gfortran`:
 ```bash
 cd /path/to/rheokit/src
 gfortran -O3 -o shear.x shear.f
@@ -72,7 +72,7 @@ The`notebooks/`directory contains interactive **RheoKit** utilities that mirror 
 
 ## 🧾 Citation
 
-If you use RheoKit or its components in your research, please cite the associated preprint:
+If you use RheoKit in your research, please cite the associated preprint:
 
 > Viscosity Calculations of Liquids Modeled with Induced Polarizable Force Fields
 > *ChemRxiv* (2025). DOI: [10.26434/chemrxiv-2025-n1rqb](https://doi.org/10.26434/chemrxiv-2025-n1rqb)
