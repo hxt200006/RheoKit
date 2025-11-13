@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use RheoKit in your research, please cite the associated preprint:"
+title: "Viscosity Calculations of Liquids Modeled with Induced Polarizable Force Fields"
+authors:
+  - family-names: "Relix"
+    given-names: "Daniel"
+    orcid: "https://orcid.org/0009-0002-1598-9643"
+  - family-names: "Torabifard"
+    given-names: "Hedieh"
+    orcid: "https://orcid.org/0000-0003-0687-6858"
+version: "0.1.0"
+date-released: "2025-11-12"
+repository-code: "https://github.com/d-rel82/RheoKit.git
+identifiers:
+  - type: doi
+    value: "10.26434/chemrxiv-2025-n1rqb"
+license: "BSD-3-Clause"
+preferred-citation:
+  type: article
+  title: "Viscosity Calculations of Liquids Modeled with Induced Polarizable Force Fields"
+  authors:
+    - family-names: "Relix"
+      given-names: "Daniel"
+    - family-names: "Torabifard"
+      given-names: "Hedieh"
+  year: 2025
+  journal: "ChemRxiv"
+  doi: "10.26434/chemrxiv-2025-n1rqb"
