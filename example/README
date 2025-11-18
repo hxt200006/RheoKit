@@ -1,0 +1,5 @@
+This directory contains an example demonstrating how to use  
+the programs in RheoKit on the command line.
+
+The test system used here contains
+1000 ethanol molecules at 323.15K in NVT conditions.

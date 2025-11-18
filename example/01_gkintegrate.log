@@ -1,0 +1,21 @@
+
+             ################################################################
+             ##                                                            ##
+             ##  RheoKit: GK Integrate                                     ##
+             ##  By Daniel Relix                                           ##
+             ##                                                            ##
+             ################################################################
+
+Job started: 2025-10-23 21:22:16
+Log file: 01_gkintegrate.log
+
+------------------------------------------------------------------------------------------
+GREEN-KUBO ANALYSIS
+   Manifest            : stress_manifest.txt
+   Box Dimensions      : [47.0, 47.0, 47.0] Ang.
+   Temperature         : 323.15 K
+   Output file         : EtOH_hp.parquet
+   Replicates averaged : 40
+   Frames Used         : 1499999
+   Rep. Sim. Time      : 1500.000 ps
+   Integral Range      : 0.001 – 1499.999 ps
