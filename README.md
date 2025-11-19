@@ -33,7 +33,7 @@ gfortran -O3 -o shear shear.f
 
 Make a file named `RheoKit_commands.sh` with the absolute paths to each utility:
 ```bash
-shear="/path/to/RheoKit/shear.x"
+shear="/path/to/RheoKit/shear"
 gkintegrate="/path/to/RheoKit/src/GK_Integrate.py"
 platchk="/path/to/RheoKit/src/PlateauCheck.py"
 stressfit="/path/to/RheoKit/src/StressFit.py"
