@@ -26,7 +26,7 @@ Each RheoKit component can be run independently. For convenience, you can store 
 **Shear** is a fortran program. Compile it with `gfortran`:
 ```bash
 cd /path/to/rheokit/src
-gfortran -O3 -o shear.x shear.f
+gfortran -O3 -o shear shear.f
 ```
 
 ### 2️⃣ Create a setup file
