@@ -2,7 +2,7 @@
 
 **RheoKit** is a modular toolkit for calculating liquid viscosity via the **Green–Kubo (GK) formalism** following best practices recommended by Maginn *et al.* (2019, DOI: [10.33011/livecoms.1.1.6324](https://doi.org/10.33011/livecoms.1.1.6324)) and using data from **Tinker** and **Tinker-HP** molecular dynamics simulations.
 
-It provides a reproducible, end-to-end workflow for stress-tensor extraction, integration, plateau analysis, and model fitting.
+It provides a reproducible, end-to-end workflow for stress-tensor extraction, integration, plateau analysis, model fitting, and error analysis.
 
 ---
 
@@ -16,6 +16,7 @@ RheoKit is organized into four standalone utilities:
 | **GKIntegrate** | Computes the stress autocorrelation function (ACF) and its Green–Kubo time integral from `.str` files. |
 | **PlateauCheck** | Evaluates the running viscosity integral to identify when it reaches a stable (flat) plateau region. |
 | **StressFit** | Fits averaged integrals to a **double-exponential model** to obtain the final viscosity. |
+| **BootstrapCI** | Calculates confidence intervals with a nonparametric bootstrap procedure applied to replicate simulations. |
 
 ## 🧭 Usage
 
@@ -37,6 +38,7 @@ shear="/path/to/RheoKit/shear"
 gkintegrate="/path/to/RheoKit/src/GK_Integrate.py"
 platchk="/path/to/RheoKit/src/PlateauCheck.py"
 stressfit="/path/to/RheoKit/src/StressFit.py"
+bootstrapci="/path/to/RheoKit/src/BootstrapCI.py"
 ```
 
 ### 3️⃣ Source the setup file
@@ -62,13 +64,16 @@ python $platchk --parquet water_298.parquet --manifest stress_manifest.txt --cut
 
 # Fit double-exponential model
 python $stressfit --parquet water_298.parquet --cutoff 800
+
+# Calculate confidence intervals
+python $bootstrapci --parquet water_298.parquet -n-boot 100 --cutoff 800
 ```
 
 Each program supports `--help` to display available options
 
 ## 📓 Notebooks
 
-The`notebooks/`directory contains interactive **RheoKit** utilities that mirror the python based command-line tools. Each notebook removes the CLI interface and exposes the core functions directly. Users can set input arguments in code cells and call the corresponding utility functions within the same environment. These notebooks are meant to help users understand the workflow and adapt it for their own data.
+The `notebooks/` directory contains interactive **RheoKit** utilities that mirror the python based command-line tools. Each notebook removes the CLI interface and exposes the core functions directly. Users can set input arguments in code cells and call the corresponding utility functions within the same environment. These notebooks are meant to help users understand the workflow and adapt it for their own data.
 
 ## 🧾 Citation
 
